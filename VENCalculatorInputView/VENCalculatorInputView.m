@@ -47,15 +47,15 @@
 
 - (IBAction)userDidTapBackspace:(UIButton *)sender {
     [[UIDevice currentDevice] playInputClick];
-    if ([self.delegate respondsToSelector:@selector(calculatorInputViewDidTapBackspace:)]) {
-        [self.delegate calculatorInputViewDidTapBackspace:self];
+    if ([self.delegate respondsToSelector:@selector(calculatorInputViewDidTapBackspace:button:)]) {
+        [self.delegate calculatorInputViewDidTapBackspace:self button:sender];
     }
 }
 
 - (IBAction)userDidTapKey:(UIButton *)sender {
     [[UIDevice currentDevice] playInputClick];
     if ([self.delegate respondsToSelector:@selector(calculatorInputView:didTapKey:)]) {
-        [self.delegate calculatorInputView:self didTapKey:sender.titleLabel.text];
+        [self.delegate calculatorInputView:self didTapKey:sender];
     }
 }
 

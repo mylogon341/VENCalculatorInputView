@@ -4,8 +4,8 @@
 @protocol VENCalculatorInputViewDelegate <NSObject>
 
 @optional
-- (void)calculatorInputView:(VENCalculatorInputView *)inputView didTapKey:(NSString *)key;
-- (void)calculatorInputViewDidTapBackspace:(VENCalculatorInputView *)calculatorInputView;
+- (void)calculatorInputView:(VENCalculatorInputView *)inputView didTapKey:(UIButton*)key;
+- (void)calculatorInputViewDidTapBackspace:(VENCalculatorInputView *)calculatorInputView button:(UIButton*)button;
 
 @end
 

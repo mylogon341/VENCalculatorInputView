@@ -17,6 +17,7 @@
 }
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     [self setUpInit];
 }
 
@@ -59,27 +60,30 @@
 
 #pragma mark - VENCalculatorInputViewDelegate
 
-- (void)calculatorInputView:(VENCalculatorInputView *)inputView didTapKey:(NSString *)key {
+- (void)calculatorInputView:(VENCalculatorInputView *)inputView didTapKey:(UIButton *)key {
+    
+    NSString * keyString = key.titleLabel.text;
+    
     if ([self.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
         NSRange range = [self selectedNSRange];
-        if (![self.delegate textField:self shouldChangeCharactersInRange:range replacementString:key]) {
+        if (![self.delegate textField:self shouldChangeCharactersInRange:range replacementString:keyString]) {
             return;
         }
     }
-
-    [self insertText:key];
+    
+    [self insertText:keyString];
     NSString *subString = [self.text substringToIndex:self.text.length - 1];
-    if ([key isEqualToString:@"+"] ||
-        [key isEqualToString:@"−"] ||
-        [key isEqualToString:@"×"] ||
-        [key isEqualToString:@"÷"]) {
+    if ([keyString isEqualToString:@"+"] ||
+        [keyString isEqualToString:@"−"] ||
+        [keyString isEqualToString:@"×"] ||
+        [keyString isEqualToString:@"÷"]) {
         NSString *evaluatedString = [self.moneyCalculator evaluateExpression:[self trimExpressionString:subString]];
         if (evaluatedString) {
-            self.text = [NSString stringWithFormat:@"%@%@", evaluatedString, key];
+            self.text = [NSString stringWithFormat:@"%@%@", evaluatedString, keyString];
         } else {
             self.text = subString;
         }
-    } else if ([key isEqualToString:[self decimalSeparator]]) {
+    } else if ([keyString isEqualToString:[self decimalSeparator]]) {
         NSString *secondToLastCharacterString = [self.text substringWithRange:NSMakeRange([self.text length] - 2, 1)];
         if ([secondToLastCharacterString isEqualToString:[self decimalSeparator]]) {
             self.text = subString;
