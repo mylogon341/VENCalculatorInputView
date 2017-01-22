@@ -15,19 +15,6 @@
             <rect key="frame" x="0.0" y="0.0" width="1069" height="846"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x27-vp-6DR">
-                    <rect key="frame" x="0.0" y="0.0" width="64.666666666666671" height="100.66666666666667"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <accessibility key="accessibilityConfiguration" label="Divide"/>
-                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                    <state key="normal" title="÷">
-                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="2lI-PU-xC5"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUR-3U-wcK">
                     <rect key="frame" x="128.33333333333331" y="0.0" width="235.33333333333331" height="211.66666666666666"/>
                     <accessibility key="accessibilityConfiguration" label="One"/>
@@ -200,19 +187,6 @@
                         <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="6Bt-kp-gmU"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBd-FD-Y10">
-                    <rect key="frame" x="0.0" y="0.0" width="64.666666666666671" height="100.66666666666667"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <accessibility key="accessibilityConfiguration" label="Divide"/>
-                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                    <state key="normal" title="÷">
-                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="userDidTapKey:" destination="1" eventType="touchUpInside" id="h53-FV-34b"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pm3-hE-4CL">
                     <rect key="frame" x="0.0" y="0.0" width="128.33333333333334" height="211.66666666666666"/>
                     <accessibility key="accessibilityConfiguration" label="Divide"/>
@@ -340,7 +314,6 @@
                 <outletCollection property="numberButtonCollection" destination="ZMP-0C-Anz" id="VZF-LY-S9Z"/>
                 <outletCollection property="numberButtonCollection" destination="jYZ-Lf-J5j" id="mva-Hj-hfI"/>
                 <outletCollection property="numberButtonCollection" destination="WJe-DO-RoA" id="8H0-Ov-SWV"/>
-                <outletCollection property="operationButtonCollection" destination="x27-vp-6DR" id="UQW-WX-jyQ"/>
                 <outletCollection property="operationButtonCollection" destination="xVG-Mb-OFf" id="vMh-VD-5cC"/>
                 <outletCollection property="operationButtonCollection" destination="eYd-gM-or0" id="Pcu-vP-N1v"/>
                 <outletCollection property="operationButtonCollection" destination="Vjs-Bi-wiF" id="Ali-RS-13G"/>
