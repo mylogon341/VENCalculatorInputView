@@ -317,6 +317,9 @@
                 <outletCollection property="operationButtonCollection" destination="xVG-Mb-OFf" id="vMh-VD-5cC"/>
                 <outletCollection property="operationButtonCollection" destination="eYd-gM-or0" id="Pcu-vP-N1v"/>
                 <outletCollection property="operationButtonCollection" destination="Vjs-Bi-wiF" id="Ali-RS-13G"/>
+                <outletCollection property="operationButtonCollection" destination="66P-Rh-qf0" id="s56-nj-Gje"/>
+                <outletCollection property="operationButtonCollection" destination="Pm3-hE-4CL" id="hxn-gL-aPo"/>
+                <outletCollection property="operationButtonCollection" destination="4fA-8T-WAB" id="Ute-Jp-yps"/>
             </connections>
             <point key="canvasLocation" x="232.5" y="63"/>
         </view>
