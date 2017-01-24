@@ -54,8 +54,9 @@
 
 - (IBAction)userDidTapKey:(UIButton *)sender {
     [[UIDevice currentDevice] playInputClick];
-    if ([self.delegate respondsToSelector:@selector(calculatorInputView:didTapKey:)]) {
-        [self.delegate calculatorInputView:self didTapKey:sender];
+    if ([self.delegate respondsToSelector:@selector(calculatorInputView:didTapKey:isOperator:)]) {
+        [self.delegate calculatorInputView:self didTapKey:sender
+                                isOperator:[_operationButtonCollection containsObject:sender]];
     }
 }
 
