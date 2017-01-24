@@ -47,8 +47,8 @@
 
 - (IBAction)userDidTapBackspace:(UIButton *)sender {
     [[UIDevice currentDevice] playInputClick];
-    if ([self.delegate respondsToSelector:@selector(calculatorInputViewDidTapBackspace:button:)]) {
-        [self.delegate calculatorInputViewDidTapBackspace:self button:sender];
+    if ([self.delegate respondsToSelector:@selector(calculatorInputViewDidTapBackspace:)]) {
+        [self.delegate calculatorInputViewDidTapBackspace:self];
     }
 }
 
