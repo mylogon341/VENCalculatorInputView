@@ -364,6 +364,7 @@
                 <outletCollection property="operationButtonCollection" destination="4fA-8T-WAB" id="Ute-Jp-yps"/>
                 <outletCollection property="operationButtonCollection" destination="OvS-Hi-AaJ" id="xJt-Nz-lHm"/>
                 <outletCollection property="operationButtonCollection" destination="7zK-81-jGz" id="PlY-cC-llK"/>
+                <outletCollection property="operationButtonCollection" destination="wUa-H7-PHT" id="mgT-gx-VP6"/>
             </connections>
             <point key="canvasLocation" x="232.5" y="63"/>
         </view>
